@@ -1,0 +1,55 @@
+@keyframes menuIconAnimation {
+  0% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+  25% {
+    opacity: 30%;
+    transform: translateX(-20%);
+  }
+  75% {
+    opacity: 30%;
+    transform: translateX(20%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
+.icon {
+  display: block;
+  width: 24px;
+  padding-bottom: 24px;
+
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  transition-duration: 300ms;
+
+  &--phone {
+    background-image: url("../images/phone.svg");
+
+    &:hover {
+      transform: scale(0.94);
+    }
+  }
+
+  &--menu {
+    animation: menuIconAnimation 300ms;
+    background-image: url("../images/menu_opener.svg");
+
+    &:hover {
+      animation: menuIconAnimation 300ms;
+      background-image: url("../images/menu_hover.svg");
+    }
+  }
+
+  &--cross {
+    background-image: url("../images/cross.svg");
+
+    &:hover {
+      transform: scale(0.95);
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.about-us {
+  &__content {
+    @extend %contentRules;
+  }
+  &__title {
+
+    letter-spacing: -1.5px;
+    margin-bottom: 32px;
+
+    @include onTablet {
+      margin-bottom: 0;
+    }
+  }
+  &__list {
+    margin: 0 0 40px;
+    padding: 0;
+  }
+  &__item {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: $mainDarkColor;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $mainDarkColor;
+
+    &:not(last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}

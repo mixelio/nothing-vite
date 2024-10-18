@@ -1,0 +1,18 @@
+.image-separator {
+  margin-bottom: 48px;
+  width: 100%;
+  height: 200px;
+  background-image: url("../images/photos/image-separator.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include onTablet {
+    margin-bottom: 56px;
+    height: 400px;
+  }
+
+  @include onDesctop {
+    height: 460px;
+  }
+}
